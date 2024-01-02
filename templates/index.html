@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop shopping Platform</title>
+    <link rel="stylesheet" href="../static/css/tailcss.css">
+    <link rel="stylesheet" href="../static/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/utils.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/coursel.css">
+</head>
+<body style="width: 90vw;margin-inline: auto;" class="grid gap-2 content-start">
+    <header class="desktop grid gap-1">
+        <div class="upper-header grid bg-primaryColor">
+            <div class="logo">logo</div>
+            <form action="" method="get" class="search-area grid">
+                <div class="form-group">
+                    <select name="" id="search-by">
+                        <option value="">All</option>
+                        <option value="">Categories</option>
+                        <option value="">Products</option>
+                        <option value="">Business</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="search" name="" id="" placeholder="Search ... ">
+                </div>
+            </form>
+            <div class="action-part grid gap-2 grid-flow-col justify-end items-center">
+                <div class="theme-switch">
+                    <label class="grid" for="theme-switch-toggle">
+                        <div class="switch-ball">
+                            <span class="light grid">
+                                <i class="fa fa-sun-o"></i>
+                            </span>
+                            <span class="dark hidden">
+                                <i class="fa fa-moon-o"></i>
+                            </span>
+                        </div>
+                    </label>
+                    <input type="checkbox" name="" id="theme-switch-toggle" class="hidden">
+                </div>
+                <a href="" class="tab-mini btn icon rounded-full">
+                    <i class="fa fa-shopping-bag"></i>
+                    <span class="numeric">3</span>
+                </a>
+                <a href="" class="tab-mini btn icon rounded-full">
+                    <i class="fa fa-bell"></i>
+                    <span class="numeric">3</span>
+                </a>
+                <div class="tab-mini btn icon bordered rounded-full with-dropdown">
+                    <i class="fa fa-user"></i>
+                    <div class="tab-dropdown mini">
+                        <a href="" class="grid px-2 py-2 option">Profile</a>
+                        <a href="" class="grid px-2 py-2 option">Business</a>
+                        <a href="" class="grid px-2 py-2 option">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="grid">
+            <div class="main-tabs grid grid-flow-col justify-start">
+                <div class="tabs active">
+                    <a href="">Home</a>
+                </div>
+                <div class="tabs">
+                    <a href="">Products</a>
+                </div>
+                <div class="tabs with-dropdown">
+                    <a href="">Categories</a>
+                    <div class="dropdown with-filters">
+                        <ul class="filters">
+                            <li class="header-category-toggler active" data-category-name="Clothes">Clothes</li>
+                            <li class="header-category-toggler" data-category-name="Automobiles">Automobiles</li>
+                            <li class="header-category-toggler" data-category-name="Agricultural Products">Agricultural Products</li>
+                            <li class="header-category-toggler" data-category-name="Electricals and Electronics">Electricals and Electronics</li>
+                            <li class="header-category-toggler" data-category-name="Services">Services</li>
+                        </ul>
+                        <div class="content">
+                            <div data-subcatgories-for="Clothes" class="sub-category grid">
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Men Clothes</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">Trousers</a></li>
+                                        <li><a href="">Jackets</a></li>
+                                        <li><a href="">Shorts</a></li>
+                                        <li><a href="">Suits</a></li>
+                                        <li><a href="">Shoes</a></li>
+                                        <li><a href="">Others</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Women Clothes</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">Trousers</a></li>
+                                        <li><a href="">Jackets</a></li>
+                                        <li><a href="">Shorts</a></li>
+                                        <li><a href="">Suits</a></li>
+                                        <li><a href="">Shoes</a></li>
+                                        <li><a href="">Others</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Kids Clothes</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">Trousers</a></li>
+                                        <li><a href="">Jackets</a></li>
+                                        <li><a href="">Shorts</a></li>
+                                        <li><a href="">Suits</a></li>
+                                        <li><a href="">Shoes</a></li>
+                                        <li><a href="">Others</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-subcatgories-for="Automobiles" class="sub-category hidden">
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Cars</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">Toyota</a></li>
+                                        <li><a href="">Jeep</a></li>
+                                        <li><a href="">BWM</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Car Parts</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">Brakes</a></li>
+                                        <li><a href="">Type</a></li>
+                                        <li><a href="">BWM</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-subcatgories-for="Agricultural Products" class="sub-category hidden">
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Men Clothes</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">Trousers</a></li>
+                                        <li><a href="">Jackets</a></li>
+                                        <li><a href="">Shorts</a></li>
+                                        <li><a href="">Suits</a></li>
+                                        <li><a href="">Shoes</a></li>
+                                        <li><a href="">Others</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-subcatgories-for="Electricals and Electronics" class="sub-category hidden">
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Men Clothes</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">Trousers</a></li>
+                                        <li><a href="">Jackets</a></li>
+                                        <li><a href="">Shorts</a></li>
+                                        <li><a href="">Suits</a></li>
+                                        <li><a href="">Shoes</a></li>
+                                        <li><a href="">Others</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-subcatgories-for="Services" class="sub-category hidden">
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Services</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">Tours and Travels</a></li>
+                                        <li><a href="">Accomodation</a></li>
+                                        <li><a href="">Representation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs with-dropdown">
+                    <a href="">Businesses</a>
+                    <div class="dropdown with-filters">
+                        <ul class="filters">
+                            <li class="header-category-toggler active" data-category-name="Agricultural">Agricultural</li>
+                            <li class="header-category-toggler" data-category-name="Tourism">Tourism</li>
+                            <li class="header-category-toggler" data-category-name="Fashion">Fashion</li>
+                        </ul>
+                        <div class="content">
+                            <div data-subcatgories-for="Agricultural" class="sub-category grid">
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Taxis</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">B&A Suppliers</a></li>
+                                        <li><a href="">Foroden</a></li>
+                                        <li><a href="">Fututech</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">London</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">B&A Suppliers</a></li>
+                                        <li><a href="">Foroden</a></li>
+                                        <li><a href="">Fututech</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Washington</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">B&A Suppliers</a></li>
+                                        <li><a href="">Foroden</a></li>
+                                        <li><a href="">Fututech</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-subcatgories-for="Tourism" class="sub-category hidden">
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Washington</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">B&A Suppliers</a></li>
+                                        <li><a href="">Foroden</a></li>
+                                        <li><a href="">Fututech</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-subcatgories-for="Fashion" class="sub-category hidden">
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Washington</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">B&A Suppliers</a></li>
+                                        <li><a href="">Foroden</a></li>
+                                        <li><a href="">Fututech</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-categories-part">
+                                    <h4 class="font-medium">Taxis</h4>
+                                    <ul class="sub-part">
+                                        <li><a href="">B&A Suppliers</a></li>
+                                        <li><a href="">Foroden</a></li>
+                                        <li><a href="">Fututech</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs with-dropdown">
+                    <a href="">Services</a>
+                </div>
+                <div class="tabs">
+                    <a href="">About</a>
+                </div>
+            </div>
+            <div class="side-tabs grid justify-end">
+                <div class="tabs accented">
+                    <a href="">Register Business</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banners grid">
+            <div id="banner" class="main-banner">
+                <div class="coursel" style="block-size: 100%;inline-size: 100%;">
+                    <div class="header">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <div class="slider-container">
+                      <button class="handle left-handle">
+                        <div class="text">&#8249;</div>
+                      </button>
+                      <div class="slider" style="--items-per-screen: 1">
+                            <div class="item" style="background-color: #b93737;"></div>
+                            <div class="item" style="background-color: #6bbb2a;"></div>
+                            <div class="item" style="background-color: teal;"></div>
+                      </div>
+                      <button class="handle right-handle">
+                        <div class="text">&#8250;</div>
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <!-- platform promotions -->
+            <div class="sub-banner grid"></div>
+            <!-- advertising business -->
+            <div class="business-promotions grid grid-cols-2 gap-1">
+                <div class="part"></div>
+                <div class="part"></div>
+                <!-- <div class="part"></div> -->
+            </div>
+        </section>
+
+        <!-- categories -->
+        <section class="grid w-full mx-auto cf-1 gap-6">
+            <div class="section-header grid">
+                <h3 class="section-title font-bold text-xl">Product Categories</h3>
+            </div>
+            <div class="section-body grid gap-4 category-cards grid-cols-3">
+                <div class="section-item-group category-group grid gap-2 rounded-md card p-4" >
+                    <a href=''class="section-item-group-title flex justify-between items-center"  data-category-name="">
+                        <span class="text-normal font-medium">Category Name</span>
+                        <span class="text-sm text-slate-800 font-normal">View All</span>
+                    </a>
+                    <div class="section-item-group-content grid gap-4 grid-cols-3">
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/1.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/2.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/4.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item-group category-group grid gap-2 rounded-md card p-4" >
+                    <a href=''class="section-item-group-title flex justify-between items-center"  data-category-name="">
+                        <span class="text-normal font-medium">Category Name</span>
+                        <span class="text-sm text-slate-800 font-normal">View All</span>
+                    </a>
+                    <div class="section-item-group-content grid gap-4 grid-cols-3">
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/1.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/2.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/4.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item-group category-group grid gap-2 rounded-md card p-4" >
+                    <a href=''class="section-item-group-title flex justify-between items-center"  data-category-name="">
+                        <span class="text-normal font-medium">Category Name</span>
+                        <span class="text-sm text-slate-800 font-normal">View All</span>
+                    </a>
+                    <div class="section-item-group-content grid gap-4 grid-cols-3">
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/1.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/2.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/4.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item-group category-group grid gap-2 rounded-md card p-4" >
+                    <a href=''class="section-item-group-title flex justify-between items-center"  data-category-name="">
+                        <span class="text-normal font-medium">Category Name</span>
+                        <span class="text-sm text-slate-800 font-normal">View All</span>
+                    </a>
+                    <div class="section-item-group-content grid gap-4 grid-cols-3">
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/1.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/2.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/4.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item-group category-group grid gap-2 rounded-md card p-4" >
+                    <a href=''class="section-item-group-title flex justify-between items-center"  data-category-name="">
+                        <span class="text-normal font-medium">Category Name</span>
+                        <span class="text-sm text-slate-800 font-normal">View All</span>
+                    </a>
+                    <div class="section-item-group-content grid gap-4 grid-cols-3">
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/1.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/2.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/4.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-item-group category-group grid gap-2 rounded-md card p-4" >
+                    <a href=''class="section-item-group-title flex justify-between items-center"  data-category-name="">
+                        <span class="text-normal font-medium">Category Name</span>
+                        <span class="text-sm text-slate-800 font-normal">View All</span>
+                    </a>
+                    <div class="section-item-group-content grid gap-4 grid-cols-3">
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/1.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/2.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="grid gap-0.5" href=''  data-subcategory-name="">
+                                <img loading="lazy"
+                                    src="../media/images/test/4.webp"
+                                    alt="" class="item-img rounded"
+                                    style="width: 100%;aspect-ratio:1/1;object-fit:cover;border-radius: 5px;">
+                                <div class="item-details grid gap-0 justify-start text-left justify-center">
+                                    <h5 class="text-sm font-normal hover:font-medium leading-5 text-center">
+                                        <span>Test Name</span>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="../static/js/utils.js"></script>
+<script src="../static/js/coursel.js"></script>
+</html>
